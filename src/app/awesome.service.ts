@@ -16,4 +16,8 @@ export class AwesomeService {
   addAwesome(awesome: Awesome) {
     return this.httpClient.post('http://localhost:3000/awesomes', awesome);
   }
+
+  deleteAwesome(id: number) {
+    return this.httpClient.delete('http://localhost:3000/awesomes/' + id);
+  }
 }

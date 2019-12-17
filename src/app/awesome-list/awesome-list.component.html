@@ -5,6 +5,7 @@
     <th scope="col">Tag</th>
     <th scope="col">URL</th>
     <th scope="col">Description</th>
+    <th scope="col"></th>
   </tr>
   </thead>
   <tbody>
@@ -12,6 +13,9 @@
     <td>{{item.tag}}</td>
     <td>{{item.url}}</td>
     <td>{{item.descriptions}}</td>
+<!--    <td><button href="#" class="btn btn-danger">Delete</button></td>-->
+    <td><button href="#" class="btn btn-danger" (click)="deleteAwesome(item.id)">Delete</button></td>
+    <td><button href="#" class="btn btn-primary" (click)="editAwesome()">Edit</button></td>
   </tr>
   </tbody>
 </table>
